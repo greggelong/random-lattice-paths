@@ -1,4 +1,6 @@
 # random-lattice-paths
 live p5js visualization of Project Euler 15, lattice paths on a 20 by 20 grid, random
 
+[see it live](https://greggelong.github.io/random-lattice-paths/)
+
 Here is a visualization of Project Euler 15. They ask you to calculate how many paths through a grid. It is a very compelling question with a few interesting ways to solve it. There are a few ways to find the answer but by far the most visually engaging one is by permutation of possible shortest paths. Meaning any move that does not back track. Here I am visualizing moving to the right and down in a 20 by 20 grid. I am creating paths randomly choosing either to go right or down. As you always start at 0,0, if you move any combination 19 times right and 19 times down, you will get to the end point in a total of 38 moves.  I have another version that gets an array of permutations for a 10 by 10 grid. https://github.com/greggelong/lattice-paths But as a 20 by 20 grid has more than 130 billion paths I am generating them randomly. The path is described in a paragraph element just below the canvas. Probably the best solution to this problem is on paper and caculator or by  looking it up on a table of Central binomial coefficients. 
